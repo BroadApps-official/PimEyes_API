@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      GPT_API_KEY: ${GPT_API_KEY}
+    restart: unless-stopped
