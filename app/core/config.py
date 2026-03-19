@@ -8,9 +8,6 @@ class Settings(BaseSettings):
 
     gpt_api_key: str
 
-    rate_limit_per_minute: int = 10
-    rate_limit_block_seconds: int = 60
-
     log_file: str = "logs/app.log"
 
     class Config:
